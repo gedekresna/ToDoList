@@ -9,42 +9,81 @@
     tools:context=".MainActivity"
     tools:visibility="visible">
 
+    <!--    <EditText-->
+<!--        android:id="@+id/newItem"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:text="New List"-->
+<!--        android:layout_alignTop="@id/btnAddItem"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_toLeftOf="@id/btnAddItem"-->
+<!--        android:layout_toStartOf="@id/btnAddItem"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        />-->
+
     <ListView
+        android:id="@+id/lvItems"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/lvItems"
-        android:layout_alignParentTop="true"
+        android:layout_above="@+id/btnAddItem"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_above="@+id/btnAddItem"
 
-        />
+        android:layout_marginLeft="-4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="47dp">
 
-    <EditText
-        android:id="@+id/newItem"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="New List"
-        android:layout_alignTop="@id/btnAddItem"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_toLeftOf="@id/btnAddItem"
-        android:layout_toStartOf="@id/btnAddItem"
-        android:layout_alignParentBottom="true"
-        />
+    </ListView>
 
     <Button
         android:id="@+id/btnAddItem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/newList"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:text="Add Item" />
+        android:text="Add" />
 
+<!--    <Button-->
+<!--        android:id="@+id/btnDeleteItem"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignTop="@id/btnAddItem"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:text="Delete" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnEditItem"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginLeft="156dp"-->
+<!--        android:layout_marginEnd="291dp"-->
+<!--        android:layout_marginRight="291dp"-->
+<!--        android:layout_marginBottom="5dp"-->
+<!--        android:text="Edit" />-->
+
+    <EditText
+        android:id="@+id/newList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="New List" />
+
+    <Button
+        android:id="@+id/btnNextPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/newList"
+        android:text="Next Page" />
 
 
 </RelativeLayout>
-    traintlayout.widget.ConstraintLayout>
