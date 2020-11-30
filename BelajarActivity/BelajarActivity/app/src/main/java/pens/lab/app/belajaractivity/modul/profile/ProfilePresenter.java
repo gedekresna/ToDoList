@@ -1,15 +1,17 @@
 package pens.lab.app.belajaractivity.modul.profile;
 
+import android.os.Bundle;
+
 /**
  * Created by fahrul on 13/03/19.
  */
 
-public class LoginPresenter implements LoginContract.Presenter{
-    private final LoginContract.View view;
+public class ProfilePresenter implements ProfileContract.Presenter{
+    private final ProfileContract.View view;
 
 
 
-    public LoginPresenter(LoginContract.View view) {
+    public ProfilePresenter(ProfileContract.View view) {
         this.view = view;
     }
 
@@ -17,10 +19,10 @@ public class LoginPresenter implements LoginContract.Presenter{
     public void start() {}
 
     @Override
-    public void performLogin(final String email, final String password){
-        //proses login
-        //if login success call redirect to profile
-        view.redirectToProfile();
-    }
+    public void initializeProfile(Bundle bundle) {
+        String email =bundle.getString("email");
+        String password = bundle.getString("Password");
 
+        view.setprofile(email,password);
+    }
 }

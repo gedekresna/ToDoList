@@ -1,5 +1,7 @@
 package pens.lab.app.belajaractivity.modul.profile;
 
+import android.os.Bundle;
+
 import pens.lab.app.belajaractivity.base.BasePresenter;
 import pens.lab.app.belajaractivity.base.BaseView;
 
@@ -7,12 +9,12 @@ import pens.lab.app.belajaractivity.base.BaseView;
  * Created by fahrul on 13/03/19.
  */
 
-public interface LoginContract {
+public interface ProfileContract {
     interface View extends BaseView<Presenter> {
-        void redirectToProfile();
+        void setprofile(String email,String Password);
     }
 
     interface Presenter extends BasePresenter {
-        void performLogin(String email, String password);
+        void initializeProfile(Bundle bundle);
     }
 }

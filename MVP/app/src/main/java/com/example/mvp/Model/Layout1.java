@@ -1,4 +1,6 @@
 package com.example.mvp.Model;
 
-public class ILayout1 {
+public class Layout1 implements ILayout1 {
+    public Layout1() {
+    }
 }

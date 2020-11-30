@@ -1,4 +1,4 @@
 package com.example.mvp.View;
 
-public interface Layout2View {
+public interface ILayout2View {
 }

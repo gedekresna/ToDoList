@@ -44,4 +44,16 @@
         <item name="imageTransparentOverlay">@color/pantoneTransparent</item>
     </style>
 
+    <style name="Coba" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/salmon</item>
+        <item name="colorPrimaryDark">@color/darkGreen</item>
+        <item name="tabBackgroundColor">@color/lightGreen</item>
+        <item name="toolbarBackgroundColor">@color/pantone331c</item>
+        <item name="textDarkColor">@color/pantoneDark331c</item>
+        <item name="textTabColor">@color/pantoneDark331c</item>
+        <item name="textWhiteColor">@color/myTextLight</item>
+        <item name="detailBackground">@color/myLayoutColor</item>
+        <item name="imageTransparentOverlay">@color/pantoneTransparent</item>
+    </style>
+
 </resources>

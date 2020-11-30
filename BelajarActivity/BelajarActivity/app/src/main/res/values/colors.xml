@@ -29,6 +29,12 @@
     <color name="b">#075e54</color>
     <color name="c">#41a290</color>
 
+    <!--pallete type1-->
+    <color name="lightGrey">#ecf4f3</color>
+    <color name="lightGreen">#128C7E</color>
+    <color name="darkGreen">#075e54</color>
+    <color name="salmon">#ff7e67</color>
+
 
 
 </resources>

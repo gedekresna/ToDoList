@@ -1,4 +1,4 @@
 package com.example.mvp.Model;
 
-public interface Ilayout1 {
+public interface ILayout1 {
 }

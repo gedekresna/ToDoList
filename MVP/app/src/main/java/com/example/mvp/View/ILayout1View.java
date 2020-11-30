@@ -1,4 +1,7 @@
 package com.example.mvp.View;
 
-public interface Layout1View {
+import android.content.Context;
+
+public interface ILayout1View {
+    public Context getContext();
 }

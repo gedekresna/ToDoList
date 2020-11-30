@@ -4,35 +4,100 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/c"
+    >
 
     <LinearLayout
         android:layout_centerInParent="true"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        >
 
-        <EditText
-            android:id="@+id/entEmail"
-            android:hint="EMAIL"
-            android:inputType="textEmailAddress"
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-        <EditText
-            android:id="@+id/entPassword"
-            android:hint="PASSWORD"
-            android:inputType="textPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        <Button
-            android:id="@+id/btnLogin"
+            android:layout_height="match_parent"
             android:text="LOGIN"
-            android:background="?attr/colorPrimary"
-            android:textColor="?attr/textWhiteColor"
+            android:textStyle="bold"
+            android:textSize="22dp"
             android:textAlignment="center"
+            android:fontFamily="@font/montserrat"
+            android:textColor="#fff"
+            />
+
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/form_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                app:srcCompat="@drawable/ic_baseline_person_24" />
+
+            <EditText
+                android:id="@+id/entEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:hint="Username"
+
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/form_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                app:srcCompat="@drawable/ic_baseline_email_24" />
+
+            <EditText
+                android:id="@+id/entPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:hint="Email"
+
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/btnLogin"
+                android:text="LOGIN"
+                android:background="@drawable/btn_login"
+                android:textColor="?attr/textWhiteColor"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
     </LinearLayout>
+
+
 
 </RelativeLayout>

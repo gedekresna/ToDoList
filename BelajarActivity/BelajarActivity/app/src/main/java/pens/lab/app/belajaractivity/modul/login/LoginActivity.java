@@ -20,7 +20,6 @@ public class LoginActivity extends BaseFragmentHolderActivity {
 
         loginFragment = new LoginFragment();
         setCurrentFragment(loginFragment, false);
-
     }
 
 

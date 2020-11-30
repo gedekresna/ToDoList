@@ -13,6 +13,7 @@ import androidx.annotation.Nullable;
 import pens.lab.app.belajaractivity.FirstActivity;
 import pens.lab.app.belajaractivity.R;
 import pens.lab.app.belajaractivity.base.BaseFragment;
+import pens.lab.app.belajaractivity.modul.profile.ProfileActivity;
 
 
 /**
@@ -24,6 +25,8 @@ public class LoginFragment extends BaseFragment<LoginActivity, LoginContract.Pre
     EditText etEmail;
     EditText etPassword;
     Button btnLogin;
+    String email;
+    String password;
 
 
     public LoginFragment() {
@@ -53,9 +56,9 @@ public class LoginFragment extends BaseFragment<LoginActivity, LoginContract.Pre
     }
 
     public void setBtLoginClick(){
-        String email = etEmail.getText().toString();
-        String password = etPassword.getText().toString();
-        mPresenter.performLogin(email,password);
+         email = etEmail.getText().toString();
+         password = etPassword.getText().toString();
+         mPresenter.performLogin(email,password);
     }
 
     @Override
@@ -65,7 +68,9 @@ public class LoginFragment extends BaseFragment<LoginActivity, LoginContract.Pre
 
     @Override
     public void redirectToProfile() {
-            Intent intent = new Intent(activity, FirstActivity.class);
+            Intent intent = new Intent(activity, ProfileActivity.class);
+            intent.putExtra("email", email);
+            intent.putExtra("password", password);
             startActivity(intent);
             activity.finish();
     }
